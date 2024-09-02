@@ -14,7 +14,7 @@ export function createNewEmployee() {
   const employeeId = faker.random.numeric(5);
   const firstName = faker.name.firstName();
   const lastName = faker.name.lastName();
-  const username = faker.internet.userName();
+  const username = `${firstName}_${lastName}`;
   const password = generateStrongPassword();
 
   // Save firstName and lastName as Cypress aliases

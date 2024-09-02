@@ -1,6 +1,4 @@
 
-import fs from 'fs';
-
 export function loginWithNewEmployee() {
     // Read the employee details from the JSON 
     cy.fixture('employeeDetails').then((employeeDetails) => {

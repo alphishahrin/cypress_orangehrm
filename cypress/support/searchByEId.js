@@ -1,7 +1,6 @@
 import employeeDetails from '../fixtures/employeeDetails.json';
 
 export function searchEmployeeById() {
-    // Navigate to PIM section
     cy.get(':nth-child(2) > .oxd-main-menu-item').click(); 
   
     cy.get(':nth-child(2) > .oxd-input').type(employeeDetails.employeeId); 

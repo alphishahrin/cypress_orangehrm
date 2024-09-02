@@ -23,6 +23,7 @@ describe('OrangeHRM Test Suite', () => {
     loginWithNewEmployee()
     updateInfo();
     logout();
+    cy.writeFile(`cypress/fixtures/employeeDetails`, {});
   });
 
 });
