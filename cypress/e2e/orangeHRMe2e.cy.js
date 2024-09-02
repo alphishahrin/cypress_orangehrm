@@ -5,6 +5,7 @@ import { searchEmployeeById } from '../support/searchByEId';
 import{ searchEmployeeInDirectory } from '../support/seach_by_employee_name';
 import { logout } from '../support/logout';
 import { loginWithNewEmployee } from '../support/loginWithNewEmployee';
+import { updateInfo } from '../support/updateMyInfo';
 
 
 describe('OrangeHRM Test Suite', () => {
@@ -20,6 +21,8 @@ describe('OrangeHRM Test Suite', () => {
     logout();
     cy.wait(2000);
     loginWithNewEmployee()
+    updateInfo();
+    logout();
   });
 
 });

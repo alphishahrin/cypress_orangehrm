@@ -4,7 +4,7 @@
 //  * @returns {string} - The generated password.
 //  */
 function generateStrongPassword() {
-    const length = 8; // Minimum length of password
+    const length = 8; 
     const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
     const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const digitChars = '0123456789';
@@ -16,12 +16,11 @@ function generateStrongPassword() {
     password += digitChars[Math.floor(Math.random() * digitChars.length)];
     password += allChars[Math.floor(Math.random() * allChars.length)];
   
-    // Fill the rest of the password length with random characters
     for (let i = password.length; i < length; i++) {
       password += allChars[Math.floor(Math.random() * allChars.length)];
     }
   
-    return password.split('').sort(() => 0.5 - Math.random()).join(''); // Shuffle password to ensure random distribution
+    return password.split('').sort(() => 0.5 - Math.random()).join(''); 
   }
   
   export { generateStrongPassword };
